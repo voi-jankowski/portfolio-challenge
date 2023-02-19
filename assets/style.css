@@ -1,12 +1,11 @@
  /*Colour pallet ourced from https://colorhunt.co/palette/a2d2fffef9efff865efee440 */
 
- :root {
-    --blue: #A2D2FF;
-    --white: #FEF9EF;
-    --peach: #FF865E;
-    --yellow: #FEE440;
-    --navy: #243763;
-
+:root {
+  --blue: #A2D2FF;
+  --white: #FEF9EF;
+  --peach: #FF865E;
+  --yellow: #FEE440;
+  --navy: #2c4174;
 }
 
 * {
@@ -18,57 +17,70 @@
 .main-head {
     grid-area: header;
   }
-  .main-nav {
-    grid-area: nav;
-  }
-  .about {
-    grid-area: about;
-  }
-  .work {
-    grid-area: work;
-  }
-  .contact {
-    grid-area: contact;
-  }
-  .footer {
-      grid-area: footer;
-  }
+.main-nav {
+  grid-area: nav;
+}
+.about {
+  grid-area: about;
+}
+.work {
+  grid-area: work;
+}
+.contact {
+  grid-area: contact;
+}
+.footer {
+    grid-area: footer;
+}
   
-  /*Setting up the layout for the mobile grid.*/
-  body {
-      display: grid;
-      gap: 20px;
-      grid-template-areas:
-      "header"
-      "nav"
-      "about"
-      "work"
-      "contact"
-      "footer";
-  }
-  
-  /*Setting the layout for the tablet grid*/
-  @media screen and (min-width: 480px) {
-      body {
-        grid-template-columns: 1fr 2fr;
+/*Setting up the layout for the mobile grid.*/
+body {
+    display: grid;
+    gap: 20px;
+    grid-template-areas:
+    "header"
+    "nav"
+    "about"
+    "work"
+    "contact"
+    "footer";
+
+    /*Setting the basic styling for the body.*/
+    font-size: 1.5em;
+    line-height: 1.5;
+    background-color: var(--white);
+    color: black;
+}
+
+header {
+  width: 90%;
+  margin: 20px auto;
+  padding: 20px;
+
+}
+
+/*Setting the layout for the tablet grid*/
+@media screen and (min-width: 480px) {
+    body {
+      grid-template-columns: 1fr 2fr;
+      grid-template-areas: 
+          "header header"
+          "nav about"
+          "work work"
+          "contact contact"
+          "footer footer";
+    }
+}
+
+/*Setting the layout for the desktop grid*/
+@media screen and (min-width: 800px) {
+    body {
+        grid-template-columns: 1fr 2fr 1fr;
         grid-template-areas: 
-            "header header"
-            "nav about"
-            "work work"
-            "contact contact"
-            "footer footer";
-      }
-  }
-  
-  /*Setting the layout for the desktop grid*/
-  @media screen and (min-width: 800px) {
-      body {
-          grid-template-columns: 1fr 2fr 1fr;
-          grid-template-areas: 
-              "header header header"
-              "nav about about"
-              "work work contact"
-              "footer footer footer";
-      }
-  }
+            "header header header"
+            "nav about about"
+            "work work contact"
+            "footer footer footer";
+    }
+}
   
