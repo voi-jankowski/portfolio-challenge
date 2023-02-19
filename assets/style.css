@@ -233,6 +233,15 @@ header figure {
 
 /* || My Work Section */
 
+.work {
+  width: 100%;
+  margin: 20px auto;
+  padding: 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+}
+
 
 
 /* || Contact Section */
