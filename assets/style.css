@@ -34,12 +34,11 @@
   /*Setting the layout for the tablet grid*/
   @media screen and (min-width: 480px) {
       body {
-          grid-template-columns: 1fr 2fr;
           grid-template-areas: 
-              "header header"
-              "nav about"
-              "work work"
-              "contact contact";
+              "header header header"
+              "nav about bout"
+              "work work work"
+              "contact contact contact";
       }
   }
   
