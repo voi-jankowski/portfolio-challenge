@@ -5,7 +5,7 @@
   --white: #FEF9EF;
   --peach: #FF865E;
   --yellow: #FEE440;
-  --navy: #2c4174;
+  --navy: #4d5c85;
 }
 
 * {
@@ -32,25 +32,7 @@
 .footer {
   grid-area: footer;
 }
-#nav-header {
-  grid-area: nav-header;
-}
-#my-photo {
-  grid-area: my-photo;
-}
-#about-bubble {
-  grid-area: about-bubble;
-}
-#resume-bubble {
-  grid-area: resume-bubble;
-}
-#works-bubble {
-  grid-area: works-bubble;
-}
-#contact-bubble {
-  grid-area: contact-bubble;
-}
-  
+
 /*Setting up the layout for the mobile grid.*/
 body {
   display: grid;
@@ -105,21 +87,19 @@ header figure {
   padding: 20px;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-areas: 
-    "nav-header nav-header"
-    "about-bubble my-photo"
-    ". resume-bubble"
-    "works-bubble ."
-    ". contact-bubble";
+  grid-template-rows: 0.3fr 1fr 1fr;
 }
 
 /*Tying width size of children to the parent.*/
 .main-nav div {
-  width: 50%;
+  width: 100%;
 }
 
 #nav-header {
   width: 80%;
+  grid-column: 1 / span 2;
+  grid-row: 1;
+  
 }
 
 .main-nav h2 {
@@ -127,26 +107,40 @@ header figure {
 
 }
 
+
+#my-photo {
+  grid-column: 2;
+  grid-row: 2;
+  margin-top: -20%;
+  margin-left: -20%;
+  z-index: 4;
+}
+
 #my-photo figure {
   width: 100%;
 }
 
-#resize {
-  width: 170px;
+#my-photo img {
+  width: 200px;
   height:auto;
   border-radius: 50%;
-  margin-bottom: -15%;
+ 
+  
 }
 
 #about-bubble {
-  width: 220px;
-  height: 220px;
+  width: 230px;
+  height: 230px;
   border-radius: 50%;
   background-color: var(--peach);
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  grid-column: 1;
+  grid-row: 2;
+  align-self: end;
+  z-index: 1;
 }
 
 #about-bubble img {
@@ -163,6 +157,11 @@ header figure {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  grid-column: 2;
+  grid-row: 3;
+  margin-top: -25%;
+  margin-left: -55%;
+  z-index: 2;
 }
 
 #resume-bubble img {
@@ -171,18 +170,23 @@ header figure {
 }
 
 #works-bubble {
-  width: 180px;
-  height: 180px;
+  width: 300px;
+  height: 300px;
   border-radius: 50%;
   background-color: var(--navy);
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  grid-column: 1;
+  grid-row: 3;
+  margin-top: 0%;
+  margin-left: 0;
+  z-index: 3;
 }
 
 #works-bubble img {
-  width: 120px;
+  width: 170px;
   height:auto;
 }
 
@@ -195,6 +199,11 @@ header figure {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  grid-column: 2;
+  grid-row: 3;
+  margin-top: 0%;
+  margin-left: 0%;
+  z-index: 5;
 }
 
 #contact-bubble img {
