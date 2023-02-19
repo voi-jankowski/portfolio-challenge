@@ -35,41 +35,46 @@
   
 /*Setting up the layout for the mobile grid.*/
 body {
-    display: grid;
-    gap: 20px;
-    grid-template-areas:
-    "header"
-    "nav"
-    "about"
-    "work"
-    "contact"
-    "footer";
+  display: grid;
+  gap: 20px;
+  grid-template-areas:
+  "header"
+  "nav"
+  "about"
+  "work"
+  "contact"
+  "footer";
 
-    /*Setting the basic styling for the body.*/
-    font-size: 1.5em;
-    line-height: 1.5;
-    background-color: var(--white);
-    color: black;
+  /*Setting the basic styling for the body.*/
+  font-size: 1.5em;
+  line-height: 1.5;
+  background-color: var(--white);
+  color: black;
 }
 
 header {
-  width: 90%;
+  width: 100%;
+  height: 20%;
   margin: 20px auto;
   padding: 20px;
 
 }
+#main-head {
+  width: 100%;
+  padding-top: 20%;
+}
 
 /*Setting the layout for the tablet grid*/
 @media screen and (min-width: 480px) {
-    body {
-      grid-template-columns: 1fr 2fr;
-      grid-template-areas: 
-          "header header"
-          "nav about"
-          "work work"
-          "contact contact"
-          "footer footer";
-    }
+  body {
+    grid-template-columns: 1fr 2fr;
+    grid-template-areas: 
+        "header header"
+        "nav about"
+        "work work"
+        "contact contact"
+        "footer footer";
+  }
 }
 
 /*Setting the layout for the desktop grid*/
