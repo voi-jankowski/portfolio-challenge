@@ -1,3 +1,5 @@
+ /* || General styles */
+ 
  /*Colour pallet ourced from https://colorhunt.co/palette/a2d2fffef9efff865efee440 */
 
 :root {
@@ -51,6 +53,10 @@ body {
   background-color: var(--white);
   color: black;
 }
+
+
+/* || Header and Main Navigation */
+
 
 header {
   width: 100%;
@@ -107,7 +113,6 @@ header figure {
   font-size: 1.2em;
 }
 
-
 #my-photo {
   grid-column: 2;
   grid-row: 2;
@@ -124,8 +129,6 @@ header figure {
   width: 200px;
   height:auto;
   border-radius: 50%;
- 
-  
 }
 
 #about-bubble {
@@ -211,6 +214,10 @@ header figure {
   height:auto;
 }
 
+
+/* || About Section */
+
+
 .about {
   width: 100%;
   height: auto;
@@ -223,6 +230,12 @@ header figure {
 .about h2 {
   font-size: 1.5em;
 }
+
+/* || My Work Section */
+
+
+
+/* || Contact Section */
 
 /*Adding the background colour and basic stying to contact section.*/
 .contact {
@@ -282,6 +295,14 @@ header figure {
   color: black;
 }
 
+
+/* || Footer */
+
+footer {
+  display: none;
+}
+
+/* || Media Queries */
 
 /*Setting the layout for the tablet grid*/
 @media screen and (min-width: 480px) {
