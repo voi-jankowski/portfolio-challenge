@@ -104,7 +104,7 @@ header figure {
 /*Styled the font for the nav header.*/
 .main-nav h2 {
   font-style: italic;
-
+  font-size: 1.2em;
 }
 
 
@@ -210,6 +210,78 @@ header figure {
   width: 160px;
   height:auto;
 }
+
+.about {
+  width: 100%;
+  height: auto;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: var(--peach);
+
+}
+
+.about h2 {
+  font-size: 1.5em;
+}
+
+/*Adding the background colour and basic stying to contact section.*/
+.contact {
+  width: 100%;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: var(--yellow);
+
+  /*Setting the section as a flex container.*/
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.contact h2 {
+  font-size: 1.3em;
+}
+
+.contact ul {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.contact li {
+  font-weight: bold;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+ 
+  background-color: var(--blue);
+  border-radius: 50%;
+}
+
+#email {
+  height: 100px;
+  width: 100px;
+  margin-top: -30%;
+}
+
+#linkedin {
+  height: 120px;
+  width: 120px;
+  margin-bottom: -15%;
+}
+
+#github {
+  height: 110px;
+  width: 110px;
+  margin-left: -5%;
+}
+
+
+.contact a {
+  color: black;
+}
+
 
 /*Setting the layout for the tablet grid*/
 @media screen and (min-width: 480px) {
