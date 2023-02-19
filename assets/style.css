@@ -30,7 +30,25 @@
   grid-area: contact;
 }
 .footer {
-    grid-area: footer;
+  grid-area: footer;
+}
+#nav-header {
+  grid-area: nav-header;
+}
+#my-photo {
+  grid-area: my-photo;
+}
+#about-bubble {
+  grid-area: about-bubble;
+}
+#resume-bubble {
+  grid-area: resume-bubble;
+}
+#works-bubble {
+  grid-area: works-bubble;
+}
+#contact-bubble {
+  grid-area: contact-bubble;
 }
   
 /*Setting up the layout for the mobile grid.*/
@@ -79,8 +97,20 @@ header figure {
   width: 300%;
   margin-top: 42%;
   
-  
+}
 
+.main-nav {
+  width: 100%;
+  margin: 20px auto;
+  padding: 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas: 
+    "nav-header nav-header"
+    "about-bubble my-photo"
+    ". resume-bubble"
+    "portfolio ."
+    ". contact-bubble";
 }
 
 /*Setting the layout for the tablet grid*/
