@@ -60,7 +60,7 @@ body {
 
 header {
   width: 100%;
-  margin: 20px auto;
+  margin: 20px;
   padding: 20px;
   /*Creating the flex container for the figure to make it reactive to display size.*/
   display: flex;
@@ -89,7 +89,7 @@ header figure {
 /*Turned main-nav container into grid.*/
 .main-nav {
   width: 100%;
-  margin: 20px auto;
+  margin: 20px;
   padding: 20px;
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -221,8 +221,8 @@ header figure {
 .about {
   width: 100%;
   height: auto;
-  margin: 20px auto;
-  padding: 20px;
+  margin: 0 auto;
+  padding: 40px;
   background-color: var(--peach);
 
 }
@@ -233,24 +233,39 @@ header figure {
 
 /* || My Work Section */
 
+/*Creates a grid in the section to position bubbles with links to applications or placeholder images.*/
 .work {
   width: 100%;
-  margin: 20px auto;
+  margin: 20px;
   padding: 20px;
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr;
 }
 
+.work-bubble {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  background-color: var(--navy);
+}
 
+#work1 {
+  grid-column: 1;
+  grid-row: 1;
+  margin-top: 0;
+  margin-left: 0;
+  z-index: 1;
+}
 
 /* || Contact Section */
 
 /*Adding the background colour and basic stying to contact section.*/
 .contact {
   width: 100%;
-  margin: 20px auto;
+  margin: 20px;
   padding: 20px;
+  padding-right: 40px;
   background-color: var(--yellow);
 
   /*Setting the section as a flex container.*/
