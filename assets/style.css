@@ -1,3 +1,19 @@
+ /*Colour pallet ourced from https://colorhunt.co/palette/a2d2fffef9efff865efee440 */
+
+ :root {
+    --blue: #A2D2FF;
+    --white: #FEF9EF;
+    --peach: #FF865E;
+    --yellow: #FEE440;
+    --navy: #243763;
+
+}
+
+* {
+    font-family: Helvetica, Arial,  sans-serif;
+}
+
+
 /*Naming the areas using the grid-area property.*/
 .main-head {
     grid-area: header;
