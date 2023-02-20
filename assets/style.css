@@ -19,16 +19,16 @@
 .main-head {
     grid-area: header;
   }
-.main-nav {
+#main-nav {
   grid-area: nav;
 }
-.about {
+#about {
   grid-area: about;
 }
-.work {
+#work {
   grid-area: work;
 }
-.contact {
+#contact {
   grid-area: contact;
 }
 .footer {
@@ -87,7 +87,7 @@ header figure {
 }
 
 /*Turned main-nav container into grid.*/
-.main-nav {
+#main-nav {
   width: 100%;
   margin: 20px auto;
   padding: 20px;
@@ -97,7 +97,7 @@ header figure {
 }
 
 /*Tying width size of children to the parent.*/
-.main-nav div {
+nav div {
   width: 100%;
 }
 
@@ -108,7 +108,7 @@ header figure {
   
 }
 /*Styled the font for the nav header.*/
-.main-nav h2 {
+#main-nav h2 {
   font-style: italic;
   font-size: 1.2em;
 }
@@ -218,7 +218,7 @@ header figure {
 /* || About Section */
 
 
-.about {
+#about {
   width: 100%;
   height: auto;
   margin: 0 auto;
@@ -227,14 +227,14 @@ header figure {
 
 }
 
-.about h2 {
+#about h2 {
   font-size: 1.5em;
 }
 
 /* || My Work Section */
 
 /*Creates a grid in the section to position bubbles with links to applications or placeholder images.*/
-.work {
+#work {
   width: 100%;
   margin: 20px auto;
   padding: 20px;
@@ -328,7 +328,7 @@ header figure {
 /* || Contact Section */
 
 /*Adding the background colour and basic stying to contact section.*/
-.contact {
+#contact {
   width: 100%;
   margin: 20px auto;
   padding: 20px;
@@ -342,17 +342,17 @@ header figure {
   align-items: center;
 }
 
-.contact h2 {
+#contact h2 {
   font-size: 1.3em;
 }
 
-.contact ul {
+#contact ul {
   display: flex;
   justify-content: flex-end;
   align-items: center;
 }
 
-.contact li {
+#contact li {
   font-weight: bold;
   display: flex;
   flex-direction: column;
@@ -382,7 +382,7 @@ header figure {
 }
 
 
-.contact a {
+#contact a {
   color: black;
 }
 
