@@ -250,12 +250,19 @@ header figure {
   display: flex;
   justify-content: center;
   align-items: center;
+  position: relative;
 }
 /* Img opacity used together with the :hover selector to change the opacity on mouse-over:*/
 .work-bubble img {
   width: 100%;
   border-radius: 50%;
-  opacity: 0.8;
+  opacity: 0.6;
+}
+
+.work-bubble h3 {
+  position: absolute;
+  font-size: 1.5em;
+  z-index: 6;
 }
 
 #work1 {
@@ -306,6 +313,15 @@ header figure {
   margin-top: -5%;
   margin-left: 38%;
   z-index: 1;
+}
+
+.work-bubble img:hover {
+  opacity: 1.0;
+  z-index: 5;
+}
+
+.work-bubble h3:hover {
+  font-size: 2em;
 }
 
 /* || Contact Section */
