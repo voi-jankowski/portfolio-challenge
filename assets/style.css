@@ -31,9 +31,6 @@
 #contact {
   grid-area: contact;
 }
-.footer {
-  grid-area: footer;
-}
 
 /*Setting up the layout for the mobile grid.*/
 body {
@@ -44,8 +41,7 @@ body {
   "nav"
   "about"
   "work"
-  "contact"
-  "footer";
+  "contact";
 
   /*Setting the basic styling for the body.*/
   font-size: 1.5em;
@@ -61,7 +57,7 @@ body {
 header {
   width: 100%;
   margin: 20px auto;
-  padding: 20px;
+  padding: 40px;
   /*Creating the flex container for the figure to make it reactive to display size.*/
   display: flex;
   flex-direction: column;
@@ -90,7 +86,7 @@ header figure {
 #main-nav {
   width: 100%;
   margin: 20px auto;
-  padding: 20px;
+  padding: 40px;
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 0.5fr 1fr 1fr 1fr;
@@ -222,7 +218,7 @@ nav div {
   width: 100%;
   height: auto;
   margin: 0 auto;
-  padding: 40px;
+  padding: 60px;
   background-color: var(--peach);
 
 }
@@ -237,7 +233,7 @@ nav div {
 #work {
   width: 100%;
   margin: 20px auto;
-  padding: 20px;
+  padding: 40px;
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr;
@@ -328,7 +324,7 @@ nav div {
 /*Adding the background colour and basic stying to contact section.*/
 #contact {
   width: 100%;
-  margin: 20px auto;
+  margin: 40px auto;
   padding: 20px;
   padding-right: 40px;
   background-color: var(--yellow);
@@ -336,7 +332,7 @@ nav div {
   /*Setting the section as a flex container.*/
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
 }
 
@@ -379,17 +375,10 @@ nav div {
   margin-left: -5%;
 }
 
-
 #contact a {
   color: black;
 }
 
-
-/* || Footer */
-
-footer {
-  display: none;
-}
 
 /* || Media Queries */
 
@@ -521,14 +510,167 @@ footer {
 }
 
 /*Setting the layout for the desktop grid*/
-@media screen and (min-width: 800px) {
-    body {
-        grid-template-columns: 1fr 2fr 1fr;
-        grid-template-areas: 
-            "header header header"
-            "nav about about"
-            "work work contact"
-            "footer footer footer";
-    }
+@media screen and (min-width: 900px) {
+  body {
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-areas: 
+          "header header nav"
+          "about about nav"
+          "work work work"
+          "contact contact contact";
+  }
+
+  header {
+    width: 100%;
+    margin: 20px auto;
+    padding: 40px;
+    /*Creating the flex container for the figure to make it reactive to display size.*/
+    display: flex;
+    flex-direction: column;
+  }
+  
+  /*Tying the size of the figure with the size of the display.*/
+  header figure {
+    width: 100%;
+    bottom: 0;
+  }
+
+  /*Creating the yellow circle with oversized image of name.*/
+  #name-bubble {
+    width: 160px;
+    height: 160px;
+    background-color: var(--yellow);
+    border-radius: 50%;
+  }
+
+  #main-head {
+    width: 300%;
+    margin-top: 42%;
+  }
+
+  #main-nav {
+    /*Changed value.*/
+   margin: 0 auto;
+ }
+ 
+  /*Tying width size of children to the parent.*/
+  nav div {
+    width: 100%;
+  }
+  
+  #main-nav h2 {
+    font-size: 1.6em;
+  }
+
+  #my-photo {
+    /*Changed value.*/
+    margin-top: 0%;
+    margin-left: 0%;
+  }
+  
+  #my-photo img {
+      /*Changed value.*/
+    width: 300px;
+  }
+
+  #about-bubble {
+    /*Changed value.*/
+    margin-top: 20%;
+    margin-left: 40%;
+  }
+  
+  #resume-bubble {
+      /*Changed value.*/
+    width: 200px;
+    height: 200px;
+    /*Changed value.*/
+    margin-top: -15%;
+    /*Changed value.*/
+    margin-left: -20%;
+  }
+  
+  #works-bubble {
+    /*Changed value.*/
+    margin-top: 10%;
+    /*Changed value.*/
+    margin-left: 0%;
+  }
+  
+  #contact-bubble {
+
+    /*Changed value.*/
+    margin-top: -15%;
+    margin-left: -5%;
+  }
+
+
+  #work {
+    width: 100%;
+      /*Changed value.*/
+    margin: 0 auto;
+    margin-top: 100px;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+  }
+  
+  .work-bubble a {
+      /*Changed value.*/
+    font-size: 2em;
+  }
+  
+  #work1 {
+      /*Changed value.*/
+    width: 400px;
+    height: 400px;
+    /*Changed value.*/
+    margin-top: 0%;
+    margin-left: 15%;
+  }
+  
+  #work2 {
+      /*Changed value.*/
+    width: 270px;
+    height: 270px;
+      /*Changed value.*/
+    margin-top: 58%;
+    margin-left: -7%;
+  }
+  
+  #work3 {
+      /*Changed value.*/
+    width: 250px;
+    height: 250px;
+      /*Changed value.*/
+    margin-top: 5%;
+    margin-left: 40%;
+  }
+  
+  #work4 {
+      /*Changed value.*/
+    width: 300px;
+    height: 300px;
+  /*Changed value.*/
+    margin-top: 31%;
+    margin-left: -20%;
+  }
+  
+  #work5 {
+      /*Changed value.*/
+    width: 370px;
+    height: 370px;
+      /*Changed value.*/
+    margin-top: -10%;
+    margin-left: 38%;
+  }
+  
+  
+  .work-bubble a:hover {
+      /*Changed value.*/
+    font-size: 2.5em;
+  }
+ 
 }
+
   
