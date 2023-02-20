@@ -462,99 +462,56 @@ footer {
     grid-template-rows: 1fr 1fr 1fr;
   }
   
-  .work-bubble {
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-  }
-  /* Img opacity used together with the :hover selector to change the opacity on mouse-over:*/
-  .work-bubble img {
-    width: 100%;
-    border-radius: 50%;
-    opacity: 0.6;
-  }
-  
   .work-bubble a {
-    position: absolute;
      /*Changed value.*/
     font-size: 2em;
-    font-weight: bold;
-    z-index: 6;
   }
   
   #work1 {
      /*Changed value.*/
     width: 400px;
     height: 400px;
-
-    grid-column: 1;
-    grid-row: 1;
     /*Changed value.*/
     margin-top: 0%;
     margin-left: 15%;
-  
-    z-index: 5;
   }
   
   #work2 {
      /*Changed value.*/
     width: 270px;
     height: 270px;
-
-    grid-column: 2;
-    grid-row: 1;
      /*Changed value.*/
     margin-top: 58%;
     margin-left: -7%;
-
-    z-index: 4;
   }
   
   #work3 {
      /*Changed value.*/
     width: 250px;
     height: 250px;
-
-    grid-column: 1;
-    grid-row: 2;
      /*Changed value.*/
     margin-top: 5%;
     margin-left: 40%;
-
-    z-index: 3;
   }
   
   #work4 {
      /*Changed value.*/
     width: 300px;
     height: 300px;
-
-    grid-column: 2;
-    grid-row: 2;
+  /*Changed value.*/
     margin-top: 31%;
     margin-left: -20%;
-    z-index: 2;
   }
   
   #work5 {
      /*Changed value.*/
     width: 370px;
     height: 370px;
-
-    grid-column: 1;
-    grid-row: 3;
      /*Changed value.*/
     margin-top: -10%;
     margin-left: 38%;
-    z-index: 1;
   }
   
-  .work-bubble img:hover {
-    opacity: 1.0;
-    z-index: 5;
-  }
   
   .work-bubble a:hover {
      /*Changed value.*/
