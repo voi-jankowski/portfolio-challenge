@@ -259,9 +259,10 @@ header figure {
   opacity: 0.6;
 }
 
-.work-bubble h3 {
+.work-bubble a {
   position: absolute;
   font-size: 1.5em;
+  font-weight: bold;
   z-index: 6;
 }
 
@@ -320,7 +321,7 @@ header figure {
   z-index: 5;
 }
 
-.work-bubble h3:hover {
+.work-bubble a:hover {
   font-size: 2em;
 }
 
