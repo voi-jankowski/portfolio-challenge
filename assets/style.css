@@ -16,7 +16,7 @@
 
 
 /*Naming the areas using the grid-area property.*/
-.main-head {
+header {
     grid-area: header;
   }
 #main-nav {
@@ -63,6 +63,11 @@ header {
   flex-direction: column;
 }
 
+header div {
+  width: 100%;
+  height: 100%;
+}
+
 /*Tying the size of the figure with the size of the display.*/
 header figure {
   width: 100%;
@@ -87,6 +92,7 @@ header figure {
   width: 100%;
   margin: 20px auto;
   padding: 40px;
+  background: repeating-linear-gradient(var(--white), var(--white) 49.9%, var(--peach) 50.1%, var(--peach) 100%);
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 0.5fr 1fr 1fr 1fr;
@@ -223,6 +229,10 @@ nav div {
 
 }
 
+#about figure img {
+  width: 60%;
+}
+
 #about h2 {
   font-size: 1.5em;
 }
@@ -234,13 +244,21 @@ nav div {
   width: 100%;
   margin: 20px auto;
   padding: 40px;
+  background-color: var(--navy);
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr;
 }
 
+#work figure img {
+  width: 100%;
+  grid-column: 2;
+  grid-row: 1;
+}
+
 .work-bubble {
   border-radius: 50%;
+  background-color: var(--white);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -263,10 +281,10 @@ nav div {
 #work1 {
   width: 250px;
   height: 250px;
-  grid-column: 1;
-  grid-row: 1;
-  margin-bottom: 0%;
-  margin-left: 9%;
+  grid-column: 2;
+  grid-row: 2;
+  margin-top: -10%;
+  margin-left: -10%;
   z-index: 5;
 }
 
@@ -286,27 +304,27 @@ nav div {
   grid-column: 1;
   grid-row: 2;
   margin-top: -5%;
-  margin-left: 31%;
+  margin-left: 25%;
   z-index: 3;
 }
 
 #work4 {
-  width: 220px;
-  height: 220px;
-  grid-column: 2;
-  grid-row: 2;
-  margin-top: 11%;
-  margin-left: -10%;
-  z-index: 2;
-}
-
-#work5 {
   width: 240px;
   height: 240px;
   grid-column: 1;
   grid-row: 3;
-  margin-top: -5%;
-  margin-left: 38%;
+  margin-top: 0%;
+  margin-left: 0%;
+  z-index: 2;
+}
+
+#work5 {
+  width: 200px;
+  height: 200px;
+  grid-column: 2;
+  grid-row: 3;
+  margin-top: -15%;
+  margin-left: -18%;
   z-index: 1;
 }
 
@@ -509,8 +527,11 @@ nav div {
   
 }
 
+
+
+
 /*Setting the layout for the desktop grid*/
-@media screen and (min-width: 900px) {
+@media screen and (min-width: 1100px) {
   body {
       grid-template-columns: 1fr 1fr 1fr;
       grid-template-areas: 
@@ -526,12 +547,13 @@ nav div {
     padding: 40px;
     /*Creating the flex container for the figure to make it reactive to display size.*/
     display: flex;
-    flex-direction: column;
+    flex-direction: block;
   }
   
   /*Tying the size of the figure with the size of the display.*/
   header figure {
     width: 100%;
+    height: 100%;
     bottom: 0;
   }
 
@@ -602,6 +624,25 @@ nav div {
     margin-top: -15%;
     margin-left: -5%;
   }
+
+
+
+  /* || About Section */
+
+
+#about {
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+  padding: 60px;
+  background-color: var(--peach);
+  
+
+}
+
+#about h2 {
+  font-size: 1.5em;
+}
 
 
   #work {
