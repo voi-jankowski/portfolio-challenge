@@ -530,7 +530,9 @@ nav div {
     font-size: 2.5em;
   }
   
+  
 }
+
 
 
 
@@ -636,11 +638,123 @@ nav div {
     margin-left: -18%;
   }
   
-  
   .work-bubble a:hover {
      /*Changed value.*/
     font-size: 3.5em;
   }
+
   
+  #contact li {
+    font-size: 1.3em;
+  }
+
+  #email {
+    height: 150px;
+    width: 150px;
+    margin-top: -15%;
+  }
+  
+  #linkedin {
+    height: 180px;
+    width: 180px;
+    margin-bottom: -15%;
+  }
+  
+  #github {
+    height: 165px;
+    width: 165px;
+    margin-left: -5%;
+  }
+
 }
+  
+@media screen and (min-width: 1800px) {
+  #name-bubble {
+    width: 360px;
+    height: 360px;
+    background-color: var(--yellow);
+    border-radius: 50%;
+  }
+
+  .work-bubble a {
+    /*Changed value.*/
+    font-size: 3em;
+  }
+  
+  #work1 {
+    /*Changed value.*/
+    width: 800px;
+    height: 800px;
+    /*Changed value.*/
+    margin-top: -10%;
+    margin-left: 10%;
+  }
+  
+  #work2 {
+    /*Changed value.*/
+    width: 640px;
+    height: 640px;
+    /*Changed value.*/
+    margin-top: 18%;
+    margin-left: -7%;
+  }
+  
+  #work3 {
+    /*Changed value.*/
+    width: 600px;
+    height: 600px;
+    /*Changed value.*/
+    margin-top: -5%;
+    margin-left: 45%;
+  }
+  
+  #work4 {
+    /*Changed value.*/
+    width: 700px;
+    height: 700px;
+  /*Changed value.*/
+    margin-top: 0%;
+    margin-left: 20%;
+  }
+  
+  #work5 {
+    /*Changed value.*/
+    width: 640px;
+    height: 640px;
+    /*Changed value.*/
+    margin-top: -15%;
+    margin-left: -18%;
+  }
+
+  #work figure img {
+    width: 70%;
+  }
+
+  #contact img {
+    width: 30%;
+  }
+
+  #contact li {
+    font-size: 1.6em;
+  }
+
+  #email {
+    height: 200px;
+    width: 200px;
+    margin-top: -15%;
+  }
+  
+  #linkedin {
+    height: 240px;
+    width: 240px;
+    margin-bottom: -15%;
+  }
+  
+  #github {
+    height: 220px;
+    width: 220px;
+    margin-left: -5%;
+  }
+}
+
   
