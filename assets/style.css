@@ -354,8 +354,8 @@ nav div {
   align-items: center;
 }
 
-#contact h2 {
-  font-size: 1.3em;
+#contact img {
+  width: 40%;
 }
 
 #contact ul {
