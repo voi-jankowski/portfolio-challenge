@@ -72,6 +72,7 @@ header div {
 header figure {
   width: 100%;
   bottom: 0;
+  z-index:;
 }
 
 /*Creating the yellow circle with oversized image of name.*/
@@ -230,11 +231,16 @@ nav div {
 }
 
 #about figure img {
-  width: 60%;
+  width: 10em;
+  margin-left: -10px;
 }
 
 #about h2 {
   font-size: 1.5em;
+}
+
+#about div {
+  padding-left: 40px;
 }
 
 /* || My Work Section */
@@ -342,7 +348,7 @@ nav div {
 /*Adding the background colour and basic stying to contact section.*/
 #contact {
   width: 100%;
-  margin: 40px auto;
+  margin: 20px auto;
   padding: 20px;
   padding-right: 40px;
   background-color: var(--yellow);
@@ -462,7 +468,6 @@ nav div {
     width: 100%;
      /*Changed value.*/
     margin: 0 auto;
-    margin-top: 100px;
     padding: 20px;
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -531,7 +536,7 @@ nav div {
 
 
 /*Setting the layout for the desktop grid*/
-@media screen and (min-width: 1100px) {
+@media screen and (min-width: 1180px) {
   body {
       grid-template-columns: 1fr 1fr 1fr;
       grid-template-areas: 
@@ -570,86 +575,11 @@ nav div {
     margin-top: 42%;
   }
 
-  #main-nav {
-    /*Changed value.*/
-   margin: 0 auto;
- }
- 
-  /*Tying width size of children to the parent.*/
-  nav div {
-    width: 100%;
-  }
-  
-  #main-nav h2 {
-    font-size: 1.6em;
-  }
-
-  #my-photo {
-    /*Changed value.*/
-    margin-top: 0%;
-    margin-left: 0%;
-  }
-  
-  #my-photo img {
-      /*Changed value.*/
-    width: 300px;
-  }
-
-  #about-bubble {
-    /*Changed value.*/
-    margin-top: 20%;
-    margin-left: 40%;
-  }
-  
-  #resume-bubble {
-      /*Changed value.*/
-    width: 200px;
-    height: 200px;
-    /*Changed value.*/
-    margin-top: -15%;
-    /*Changed value.*/
-    margin-left: -20%;
-  }
-  
-  #works-bubble {
-    /*Changed value.*/
-    margin-top: 10%;
-    /*Changed value.*/
-    margin-left: 0%;
-  }
-  
-  #contact-bubble {
-
-    /*Changed value.*/
-    margin-top: -15%;
-    margin-left: -5%;
-  }
-
-
-
-  /* || About Section */
-
-
-#about {
-  width: 100%;
-  height: auto;
-  margin: 0 auto;
-  padding: 60px;
-  background-color: var(--peach);
-  
-
-}
-
-#about h2 {
-  font-size: 1.5em;
-}
-
 
   #work {
     width: 100%;
-      /*Changed value.*/
+     /*Changed value.*/
     margin: 0 auto;
-    margin-top: 100px;
     padding: 20px;
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -657,61 +587,60 @@ nav div {
   }
   
   .work-bubble a {
-      /*Changed value.*/
-    font-size: 2em;
+     /*Changed value.*/
+    font-size: 3em;
   }
   
   #work1 {
-      /*Changed value.*/
-    width: 400px;
-    height: 400px;
+     /*Changed value.*/
+    width: 500px;
+    height: 500px;
     /*Changed value.*/
-    margin-top: 0%;
-    margin-left: 15%;
+    margin-top: -10%;
+    margin-left: 10%;
   }
   
   #work2 {
-      /*Changed value.*/
-    width: 270px;
-    height: 270px;
-      /*Changed value.*/
-    margin-top: 58%;
+     /*Changed value.*/
+    width: 400px;
+    height: 400px;
+     /*Changed value.*/
+    margin-top: 18%;
     margin-left: -7%;
   }
   
   #work3 {
-      /*Changed value.*/
-    width: 250px;
-    height: 250px;
-      /*Changed value.*/
-    margin-top: 5%;
-    margin-left: 40%;
+     /*Changed value.*/
+    width: 375px;
+    height: 375px;
+     /*Changed value.*/
+    margin-top: -5%;
+    margin-left: 45%;
   }
   
   #work4 {
-      /*Changed value.*/
-    width: 300px;
-    height: 300px;
+     /*Changed value.*/
+    width: 440px;
+    height: 440px;
   /*Changed value.*/
-    margin-top: 31%;
-    margin-left: -20%;
+    margin-top: 0%;
+    margin-left: 20%;
   }
   
   #work5 {
-      /*Changed value.*/
-    width: 370px;
-    height: 370px;
-      /*Changed value.*/
-    margin-top: -10%;
-    margin-left: 38%;
+     /*Changed value.*/
+    width: 400px;
+    height: 400px;
+     /*Changed value.*/
+    margin-top: -15%;
+    margin-left: -18%;
   }
   
   
   .work-bubble a:hover {
-      /*Changed value.*/
-    font-size: 2.5em;
+     /*Changed value.*/
+    font-size: 3.5em;
   }
- 
+  
 }
-
   
