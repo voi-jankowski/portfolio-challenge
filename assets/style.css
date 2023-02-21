@@ -479,44 +479,44 @@ nav div {
     width: 400px;
     height: 400px;
     /*Changed value.*/
-    margin-top: 0%;
-    margin-left: 15%;
+    margin-top: -10%;
+    margin-left: -10%;
   }
   
   #work2 {
      /*Changed value.*/
-    width: 270px;
-    height: 270px;
+    width: 320px;
+    height: 320px;
      /*Changed value.*/
-    margin-top: 58%;
+    margin-top: 18%;
     margin-left: -7%;
   }
   
   #work3 {
      /*Changed value.*/
-    width: 250px;
-    height: 250px;
+    width: 300px;
+    height: 300px;
      /*Changed value.*/
-    margin-top: 5%;
-    margin-left: 40%;
+    margin-top: -5%;
+    margin-left: 25%;
   }
   
   #work4 {
      /*Changed value.*/
-    width: 300px;
-    height: 300px;
+    width: 350px;
+    height: 350px;
   /*Changed value.*/
-    margin-top: 31%;
-    margin-left: -20%;
+    margin-top: 0%;
+    margin-left: 0%;
   }
   
   #work5 {
      /*Changed value.*/
-    width: 370px;
-    height: 370px;
+    width: 320px;
+    height: 320px;
      /*Changed value.*/
-    margin-top: -10%;
-    margin-left: 38%;
+    margin-top: -15%;
+    margin-left: -18%;
   }
   
   
