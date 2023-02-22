@@ -1,4 +1,4 @@
- /* || General styles */
+ /* || GENERAL STYLES */
  
  /*Colour pallet ourced from https://colorhunt.co/palette/a2d2fffef9efff865efee440 */
 
@@ -51,28 +51,13 @@ body {
 }
 
 
-/* || Header and Main Navigation */
+/* || HEADER AND MAIN NAV */
 
 
 header {
   width: 100%;
   margin: 20px auto;
   padding: 40px;
-  /*Creating the flex container for the figure to make it reactive to display size.*/
-  display: flex;
-  flex-direction: column;
-}
-
-header div {
-  width: 100%;
-  height: 100%;
-}
-
-/*Tying the size of the figure with the size of the display.*/
-header figure {
-  width: 100%;
-  bottom: 0;
-  z-index:;
 }
 
 /*Creating the yellow circle with oversized image of name.*/
@@ -83,10 +68,12 @@ header figure {
   border-radius: 50%;
 }
 
+/*Placing an oversized image of my name on top of the yellow circle and positioning it slightly to the bottom.*/
 #main-head {
   width: 300%;
   margin-top: 42%;
 }
+
 
 /*Turned main-nav container into grid.*/
 #main-nav {
