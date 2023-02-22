@@ -116,6 +116,8 @@ header {
   border-radius: 50%;
 }
 
+/*Assigning the bubbles with the right sizes and circle borders, and turning them into box containers to display the link images right in the middle of them.*/
+
 #about-bubble {
   width: 230px;
   height: 230px;
@@ -200,7 +202,7 @@ header {
 }
 
 
-/* || About Section */
+/* || ABOUT SECTION */
 
 
 #about {
