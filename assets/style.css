@@ -80,17 +80,14 @@ header {
   width: 100%;
   margin: 20px auto;
   padding: 40px;
+  /* Added the split background of white and peach using repeating-linear-gradient and making each colour span almost 50% of the container.*/
   background: repeating-linear-gradient(var(--white), var(--white) 49.9%, var(--peach) 50.1%, var(--peach) 100%);
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 0.5fr 1fr 1fr 1fr;
 }
 
-/*Tying width size of children to the parent.*/
-nav div {
-  width: 100%;
-}
-
+/*Tying the size of the nav header with the size of nav section.*/
 #nav-header {
   width: 80%;
   grid-column: 1 / span 2;
@@ -98,11 +95,12 @@ nav div {
 }
 
 /*Styled the font for the nav header.*/
-#main-nav h2 {
+#nav-header h2 {
   font-weight: 300;
   font-size: 1.2em;
 }
 
+/*Positioning of my photo.*/
 #my-photo {
   grid-column: 2;
   grid-row: 2;
@@ -111,10 +109,7 @@ nav div {
   z-index: 4;
 }
 
-#my-photo figure {
-  width: 100%;
-}
-
+/*Assigning my photo with the right size and circle border.*/
 #my-photo img {
   width: 200px;
   height:auto;
