@@ -290,6 +290,7 @@ header {
 /*Assigning the bubbles with the right sizes and circle borders, and turning them into box containers to display the link images right in the middle of them.*/
 
 #work1 {
+  /* The most recent work is the largest of the images.*/
   width: 250px;
   height: 250px;
   grid-column: 2;
