@@ -273,6 +273,11 @@ header {
   opacity: 0.6;
 }
 
+.work-bubble img:hover {
+  opacity: 1.0;
+  z-index: 5;
+}
+
 /*Basic styling for the link names of works.*/
 .work-bubble a {
   position: absolute;
@@ -340,16 +345,12 @@ header {
   transition: transform .2s;
 }
 
-.work-bubble img:hover {
-  opacity: 1.0;
-  z-index: 5;
-}
-
 .work-bubble a:hover {
   transform: scale(1.1);
 }
 
-/* || Contact Section */
+
+/* || CONTACT SECTION */
 
 /*Adding the background colour and basic stying to contact section.*/
 #contact {
@@ -358,35 +359,37 @@ header {
   padding: 20px;
   padding-right: 40px;
   background-color: var(--yellow);
-
-  /*Setting the section as a flex container.*/
+  /*Setting the section as a flex container to position its children elemants.*/
   display: flex;
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
 }
 
+/*Tying the size of the contact header with the size of contact section.*/
 #contact img {
   width: 40%;
 }
 
+ /*Setting the contact list as a flex container to give initial position to the contact bubbles.*/
 #contact ul {
   display: flex;
   justify-content: flex-end;
   align-items: center;
 }
 
+/*Assigning the contact bubbles with the circle borders, and turning them into box containers to display the link names right in the middle of them.*/
 #contact li {
   font-weight: bold;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
- 
   background-color: var(--blue);
   border-radius: 50%;
 }
 
+/* Adjusting the position and size idividually to the contact bubbles.*/
 #email {
   height: 100px;
   width: 100px;
