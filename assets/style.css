@@ -409,6 +409,16 @@ header {
   color: black;
 }
 
+/*Used transition and transform properties to enlarge the contact links bubbles on hover.*/
+
+#contact li {
+  transition: transform .2s;
+}
+
+#contact li:hover {
+  transform: scale(1.2);
+}
+
 
 /* || Media Queries */
 
