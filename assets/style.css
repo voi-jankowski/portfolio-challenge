@@ -425,7 +425,7 @@ header {
 
 /* || MEDIA QUERIES */
 
-/*Setting the layout for the nav and work tablet grids and increasing the sizes of their bubbles.*/
+/*TAblet display: Setting the layout for the nav and work grids and increasing the sizes of their bubbles.*/
 @media screen and (min-width: 480px) {
   #main-nav {
     margin: 0 auto;
@@ -515,7 +515,7 @@ header {
 }
 
 
-/*Setting the layout for the desktop grid*/
+/*Desktop display: Setting the layout for the work grid and contact section and increasing the sizes of their bubbles.*/
 @media screen and (min-width: 1180px) {
   body {
       grid-template-columns: 1fr 1fr 1fr;
@@ -526,102 +526,52 @@ header {
           "contact contact contact";
   }
 
-  header {
-    width: 100%;
-    margin: 20px auto;
-    padding: 40px;
-    /*Creating the flex container for the figure to make it reactive to display size.*/
-    display: flex;
-    flex-direction: block;
-  }
-  
-  /*Tying the size of the figure with the size of the display.*/
-  header figure {
-    width: 100%;
-    height: 100%;
-    bottom: 0;
-  }
-
-  /*Creating the yellow circle with oversized image of name.*/
-  #name-bubble {
-    width: 160px;
-    height: 160px;
-    background-color: var(--yellow);
-    border-radius: 50%;
-  }
-
-  #main-head {
-    width: 300%;
-    margin-top: 42%;
-  }
-
-
-  #work {
-    width: 100%;
-     /*Changed value.*/
-    margin: 0 auto;
-    padding: 20px;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
-  }
-  
+  /*Increasing the size of the header font.*/
   .work-bubble a {
-     /*Changed value.*/
     font-size: 3em;
   }
   
   #work1 {
-     /*Changed value.*/
     width: 500px;
     height: 500px;
-    /*Changed value.*/
     margin-top: -10%;
     margin-left: 10%;
   }
   
   #work2 {
-     /*Changed value.*/
     width: 400px;
     height: 400px;
-     /*Changed value.*/
     margin-top: 18%;
     margin-left: -7%;
   }
   
   #work3 {
-     /*Changed value.*/
     width: 375px;
     height: 375px;
-     /*Changed value.*/
     margin-top: -5%;
     margin-left: 45%;
   }
   
   #work4 {
-     /*Changed value.*/
     width: 440px;
     height: 440px;
-  /*Changed value.*/
     margin-top: 0%;
     margin-left: 20%;
   }
   
   #work5 {
-     /*Changed value.*/
     width: 400px;
     height: 400px;
-     /*Changed value.*/
     margin-top: -15%;
     margin-left: -18%;
   }
   
-  .work-bubble a:hover {
-     /*Changed value.*/
-    font-size: 3.5em;
+   /*Increasing the size of the works link name font.*/
+  .work-bubble a {
+    font-size: 3em;
   }
 
-  
+  /*Increasing the size of the contacts link name font.*/
   #contact li {
     font-size: 1.3em;
   }
@@ -646,72 +596,61 @@ header {
 
 }
   
+/*Large desktop display: Setting the layout for the work grid and contact section and increasing the sizes of their bubbles.*/
 @media screen and (min-width: 1800px) {
+  
+  /*Increasing the sise of the header name image to look more balanced with the rest of the page.*/
   #name-bubble {
     width: 360px;
     height: 360px;
-    background-color: var(--yellow);
-    border-radius: 50%;
   }
 
-  .work-bubble a {
-    /*Changed value.*/
-    font-size: 3em;
-  }
-  
   #work1 {
-    /*Changed value.*/
     width: 800px;
     height: 800px;
-    /*Changed value.*/
     margin-top: -10%;
     margin-left: 10%;
   }
   
   #work2 {
-    /*Changed value.*/
     width: 640px;
     height: 640px;
-    /*Changed value.*/
     margin-top: 18%;
     margin-left: -7%;
   }
   
   #work3 {
-    /*Changed value.*/
     width: 600px;
     height: 600px;
-    /*Changed value.*/
     margin-top: -5%;
     margin-left: 45%;
   }
   
   #work4 {
-    /*Changed value.*/
     width: 700px;
     height: 700px;
-  /*Changed value.*/
     margin-top: 0%;
     margin-left: 20%;
   }
   
   #work5 {
-    /*Changed value.*/
     width: 640px;
     height: 640px;
-    /*Changed value.*/
     margin-top: -15%;
     margin-left: -18%;
   }
 
+  /*Decreasing the relative size of the works section header to look more balanced.*/
   #work figure img {
     width: 70%;
   }
 
+   /*Decreasing the relative size of the contacts section header to look more balanced.*/
   #contact img {
     width: 30%;
   }
 
+   /*Increasing the size of the contacts link name font.*/
   #contact li {
     font-size: 1.6em;
   }
