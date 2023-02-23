@@ -201,9 +201,7 @@ header {
   height:auto;
 }
 
-#div:has (#main-nav div img:hover) {
-  opacity: 0.8;
-}
+/*Used transition and transform properties to enlarge the link images on hover.*/
 
 #main-nav div a img {
   transition: transform .2s;
@@ -335,6 +333,8 @@ header {
   margin-left: -18%;
   z-index: 1;
 }
+
+/*Used transition and transform properties to enlarge the link names on hover.*/
 
 .work-bubble a {
   transition: transform .2s;
