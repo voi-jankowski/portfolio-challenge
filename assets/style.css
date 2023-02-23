@@ -201,6 +201,18 @@ header {
   height:auto;
 }
 
+#div:has (#main-nav div img:hover) {
+  opacity: 0.8;
+}
+
+#main-nav div a img {
+  transition: transform .2s;
+}
+
+#main-nav div a img:hover {
+  transform: scale(1.2);
+}
+
 
 /* || ABOUT SECTION */
 
@@ -225,7 +237,7 @@ header {
 
 /* || My Work Section */
 
-/*Creates a grid in the section to position bubbles with links to applications or placeholder images.*/
+/*Creates a grid in the section to position bubbles with placeholder images and eventually links to my applications.*/
 #work {
   width: 100%;
   margin: 20px auto;
@@ -236,12 +248,17 @@ header {
   grid-template-rows: 1fr 1fr 1fr;
 }
 
-#work figure img {
-  width: 100%;
-  grid-column: 2;
+/*Positioning the header image in the top left cell of the grid.*/
+#work figure {
+  grid-column: 1;
   grid-row: 1;
 }
+/*Tying the size of my work header with the size of its cell in the grid.*/
+#work figure img {
+  width: 100%;
+}
 
+/*Assigning the bubbles with circle borders, and turning them into box containers to display the link names right in the middle of them.*/
 .work-bubble {
   border-radius: 50%;
   background-color: var(--white);
@@ -250,6 +267,7 @@ header {
   align-items: center;
   position: relative;
 }
+
 /* Img opacity used together with the :hover selector to change the opacity on mouse-over:*/
 .work-bubble img {
   width: 100%;
@@ -257,6 +275,7 @@ header {
   opacity: 0.6;
 }
 
+/*Basic styling for the link names of works.*/
 .work-bubble a {
   position: absolute;
   color: black;
@@ -264,6 +283,8 @@ header {
   font-weight: bold;
   z-index: 6;
 }
+
+/*Assigning the bubbles with the right sizes and circle borders, and turning them into box containers to display the link images right in the middle of them.*/
 
 #work1 {
   width: 250px;
@@ -315,13 +336,17 @@ header {
   z-index: 1;
 }
 
+.work-bubble a {
+  transition: transform .2s;
+}
+
 .work-bubble img:hover {
   opacity: 1.0;
   z-index: 5;
 }
 
 .work-bubble a:hover {
-  font-size: 2em;
+  transform: scale(1.1);
 }
 
 /* || Contact Section */
