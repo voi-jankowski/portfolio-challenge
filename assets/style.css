@@ -423,137 +423,96 @@ header {
 }
 
 
-/* || Media Queries */
+/* || MEDIA QUERIES */
 
-/*Setting the layout for the nav and work tablet grids*/
+/*Setting the layout for the nav and work tablet grids and increasing the sizes of their bubbles.*/
 @media screen and (min-width: 480px) {
   #main-nav {
-     /*Changed value.*/
     margin: 0 auto;
   }
   
-  /*Tying width size of children to the parent.*/
-  nav div {
-    width: 100%;
-  }
-  
+  /*Increasing the size of the header font.*/
   #main-nav h2 {
     font-size: 1.6em;
   }
 
   #my-photo {
-    /*Changed value.*/
     margin-top: 0%;
     margin-left: 0%;
   }
   
   #my-photo img {
-     /*Changed value.*/
     width: 300px;
   }
 
   #about-bubble {
-    /*Changed value.*/
     margin-top: 20%;
     margin-left: 40%;
   }
   
   #resume-bubble {
-     /*Changed value.*/
     width: 200px;
     height: 200px;
-    /*Changed value.*/
     margin-top: -15%;
-    /*Changed value.*/
     margin-left: -20%;
   }
   
   #works-bubble {
-    /*Changed value.*/
     margin-top: 10%;
-    /*Changed value.*/
     margin-left: 0%;
   }
   
   #contact-bubble {
-
-    /*Changed value.*/
     margin-top: -15%;
     margin-left: -5%;
   }
 
 
   #work {
-    width: 100%;
-     /*Changed value.*/
     margin: 0 auto;
-    padding: 20px;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
   }
   
+   /*Increasing the size of the link name font.*/
   .work-bubble a {
-     /*Changed value.*/
     font-size: 2em;
   }
   
   #work1 {
-     /*Changed value.*/
     width: 400px;
     height: 400px;
-    /*Changed value.*/
     margin-top: -10%;
     margin-left: -10%;
   }
   
   #work2 {
-     /*Changed value.*/
     width: 320px;
     height: 320px;
-     /*Changed value.*/
     margin-top: 18%;
     margin-left: -7%;
   }
   
   #work3 {
-     /*Changed value.*/
     width: 300px;
     height: 300px;
-     /*Changed value.*/
     margin-top: -5%;
     margin-left: 25%;
   }
   
   #work4 {
-     /*Changed value.*/
     width: 350px;
     height: 350px;
-  /*Changed value.*/
     margin-top: 0%;
     margin-left: 0%;
   }
   
   #work5 {
-     /*Changed value.*/
     width: 320px;
     height: 320px;
-     /*Changed value.*/
     margin-top: -15%;
     margin-left: -18%;
   }
   
-  
-  .work-bubble a:hover {
-     /*Changed value.*/
-    font-size: 2.5em;
-  }
-  
-  
 }
-
-
-
 
 
 /*Setting the layout for the desktop grid*/
