@@ -1,128 +1,142 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="assets/reset.css">
-    <link rel="stylesheet" type="text/css" href="assets/style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="assets/reset.css" />
+    <link rel="stylesheet" type="text/css" href="assets/style.css" />
     <title>Voi Jankowski Portfolio</title>
-</head>
+  </head>
 
-<!-- The images of the headers created in Photoshop with free 'Clutchee' font from https://www.fontsquirrel.com/fonts/clutchee  -->
+  <!-- The images of the headers created in Photoshop with free 'Clutchee' font from https://www.fontsquirrel.com/fonts/clutchee  -->
 
-<body>
-
+  <body>
     <header>
-
-        <figure id="name-bubble">
-            <img id="main-head" src="assets/images/Name-Header.png" alt="Name header">
-        </figure>
-
+      <figure id="name-bubble">
+        <img
+          id="main-head"
+          src="assets/images/Name-Header.png"
+          alt="Name header"
+        />
+      </figure>
     </header>
-    
+
     <nav id="main-nav">
-        
-        <div id="nav-header">
-            <h2>Ahoy! Voi, prospective coder, here. Some bits below made by me.</h2>
-        </div>
+      <div id="nav-header">
+        <h2>Ahoy! Voi, prospective coder, here. Some bits below made by me.</h2>
+      </div>
 
-        <div id="my-photo">
-        
-            <img src="assets/images/voi-profile-img.jpg" alt="Profile photo">
-        
-        </div>
+      <div id="my-photo">
+        <img src="assets/images/voi-profile-img.jpg" alt="Profile photo" />
+      </div>
 
-        <div id="about-bubble">
+      <div id="about-bubble">
+        <a href="#about"
+          ><img src="assets/images/About.png" alt="Link to About"
+        /></a>
+      </div>
 
-            <a href="#about"><img src="assets/images/About.png" alt="Link to About"></a>
+      <div id="resume-bubble">
+        <!-- The anchor has href empty here to be filled later with the link to the pdf of the updated CV. -->
+        <a href=""
+          ><img src="assets/images/Resume.png" alt="Link to Resume"
+        /></a>
+      </div>
 
-        </div>
+      <div id="works-bubble">
+        <a href="#work"
+          ><img src="assets/images/My-Work.png" alt="Link to My Work"
+        /></a>
+      </div>
 
-        <div id="resume-bubble">
-
-            <!-- The anchor has href empty here to be filled later with the link to the pdf of the updated CV. -->
-            <a href=""><img src="assets/images/Resume.png" alt="Link to Resume"></a>
-
-        </div>
-
-        <div id="works-bubble">
-
-            <a href="#work"><img src="assets/images/My-Work.png" alt="Link to My Work"></a>
-
-        </div>
-
-        <div id="contact-bubble">
-
-            <a href="#contact"><img src="assets/images/Contact.png" alt="Link to Contact"></a>
-
-        </div>
+      <div id="contact-bubble">
+        <a href="#contact"
+          ><img src="assets/images/Contact.png" alt="Link to Contact"
+        /></a>
+      </div>
     </nav>
 
     <section id="about">
+      <figure><img src="assets/images/About.png" alt="About Header" /></figure>
 
-        <figure><img src="assets/images/About.png" alt="About Header"></figure>
+      <br />
 
-        <br>
-        
-        <div id="about-content">
-
-            <p>Voi here! I'm a former head-chef turned soon-to-be coder who is currently completing The Coding Bootcamp at USYD.</p>
-            <br>
-            <p>I studied American Literature at Warsaw University before moving to London where I donned my head-chef hat and tackled the high-pressure world of fine dining.</p>
-            <br>
-            <p>I'm bringing my love of problem-solving from the kitchen to my new career path and loving every moment of this brilliantly challenging journey as I debug my life and set about mastering HTML, CSS, Javascript and more.</p>
-            <br>
-            <p>Interested? Click on over to my portfolio for a look at some of my work.</p>
-
-        </div>
-
+      <div id="about-content">
+        <p>
+          Voi here! I'm a former head-chef turned soon-to-be coder who is
+          currently completing The Coding Bootcamp at USYD.
+        </p>
+        <br />
+        <p>
+          I studied American Literature at Warsaw University before moving to
+          London where I donned my head-chef hat and tackled the high-pressure
+          world of fine dining.
+        </p>
+        <br />
+        <p>
+          I'm bringing my love of problem-solving from the kitchen to my new
+          career path and loving every moment of this brilliantly challenging
+          journey as I debug my life and set about mastering full stack web
+          development.
+        </p>
+        <br />
+        <p>
+          Interested? Click on over to my portfolio for a look at some of my
+          work.
+        </p>
+      </div>
     </section>
 
     <!-- My works section contains placeholder images created in Photoshop, later to be replaced with images of my completed projects. The anchors have empty href eventually to be filled with links to those completed projects. -->
     <section id="work">
+      <figure>
+        <img src="assets/images/My-Work.png" alt="My Work Header" />
+      </figure>
 
-        <figure><img src="assets/images/My-Work.png" alt="My Work Header"></figure>
+      <div class="work-bubble" id="work1">
+        <img src="assets/images/work-1.png" alt="Marvelites screenshot" />
+        <a href="https://voi-jankowski.github.io/marvel/">Marvelites</a>
+      </div>
 
-        <div class="work-bubble" id="work1">
-                <img src="assets/images/work-1.png" alt="Marvelites screenshot">
-                <a href="https://voi-jankowski.github.io/marvel/">Marvelites</a>
-        </div>
+      <div class="work-bubble" id="work2">
+        <img src="assets/images/dashboard-3.png" alt="PLaceholder image 2" />
+        <a href="https://voi-jankowski.github.io/weather-dashboard/">Work 2</a>
+      </div>
 
-        <div class="work-bubble" id="work2">
-            <img src="assets/images/work-2.png" alt="PLaceholder image 2">
-            <a href="">Work 2</a>
-        </div>
+      <div class="work-bubble" id="work3">
+        <img src="assets/images/readme-4.png" alt="PLaceholder image 3" />
+        <a href="https://github.com/voi-jankowski/svg-logo-maker">Work 3</a>
+      </div>
 
-        <div class="work-bubble" id="work3">
-            <img src="assets/images/work-3.png" alt="PLaceholder image 3">
-            <a href="">Work 3</a>
-        </div>
+      <div class="work-bubble" id="work4">
+        <img src="assets/images/scheduler-2.png" alt="PLaceholder image 4" />
+        <a href="https://voi-jankowski.github.io/work-day-scheduler/">Work 4</a>
+      </div>
 
-        <div class="work-bubble" id="work4">
-            <img src="assets/images/work-4.png" alt="PLaceholder image 4">
-            <a href="">Work 4</a>
-        </div>
-
-        <div class="work-bubble" id="work5">
-            <img src="assets/images/work-5.png" alt="PLaceholder image 5">
-            <a href="">Work 5</a>
-        </div>
+      <div class="work-bubble" id="work5">
+        <img
+          src="assets/images/password-generator.png"
+          alt="PLaceholder image 5"
+        />
+        <a href="https://voi-jankowski.github.io/password-generator/">Work 5</a>
+      </div>
     </section>
 
     <section id="contact">
+      <img src="assets/images/Contact.png" alt="Contact Header" />
 
-        <img src="assets/images/Contact.png" alt="Contact Header">
-
-        
-        <ul>
-            <li id="email"><a href="mailto:wojtek.wacek.dola@gmail.com">Email</a></li>
-            <li id="linkedin"><a href="https://www.linkedin.com/in/wojtek-jankowski-009011210/">LinkedIn</a></li>
-            <li id="github"><a href="https://github.com/voi-jankowski">GitHub</a></li>
-            
-        </ul>
-        
-
+      <ul>
+        <li id="email"><a href="mailto:voi.jankowski@gmail.com">Email</a></li>
+        <li id="linkedin">
+          <a href="https://www.linkedin.com/in/wojtek-jankowski-009011210/"
+            >LinkedIn</a
+          >
+        </li>
+        <li id="github">
+          <a href="https://github.com/voi-jankowski">GitHub</a>
+        </li>
+      </ul>
     </section>
-
-</body>
+  </body>
+</html>
