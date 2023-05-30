@@ -1,24 +1,23 @@
- /* || GENERAL STYLES */
- 
- /*Colour pallet sourced from https://colorhunt.co/palette/a2d2fffef9efff865efee440 */
+/* || GENERAL STYLES */
+
+/*Colour pallet sourced from https://colorhunt.co/palette/a2d2fffef9efff865efee440 */
 
 :root {
-  --blue: #A2D2FF;
-  --white: #FEF9EF;
-  --peach: #FF865E;
-  --yellow: #FEE440;
+  --blue: #a2d2ff;
+  --white: #fef9ef;
+  --peach: #ff865e;
+  --yellow: #fee440;
   --navy: #4d5c85;
 }
 
 * {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
-
 
 /*Naming the areas using the grid-area property.*/
 header {
-    grid-area: header;
-  }
+  grid-area: header;
+}
 #main-nav {
   grid-area: nav;
 }
@@ -37,11 +36,11 @@ body {
   display: grid;
   gap: 20px;
   grid-template-areas:
-  "header"
-  "nav"
-  "about"
-  "work"
-  "contact";
+    "header"
+    "nav"
+    "about"
+    "work"
+    "contact";
 
   /*Setting the basic styling for the body.*/
   font-size: 1.5em;
@@ -50,9 +49,7 @@ body {
   color: black;
 }
 
-
 /* || HEADER AND MAIN NAV */
-
 
 header {
   width: 100%;
@@ -74,14 +71,18 @@ header {
   margin-top: 42%;
 }
 
-
 /*Turned main-nav container into grid.*/
 #main-nav {
   width: 100%;
   margin: 20px auto;
   padding: 40px;
   /* Added the split background of white and peach using repeating-linear-gradient and making each colour span almost 50% of the container.*/
-  background: repeating-linear-gradient(var(--white), var(--white) 49.9%, var(--peach) 50.1%, var(--peach) 100%);
+  background: repeating-linear-gradient(
+    var(--white),
+    var(--white) 49.9%,
+    var(--peach) 50.1%,
+    var(--peach) 100%
+  );
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 0.5fr 1fr 1fr 1fr;
@@ -112,7 +113,7 @@ header {
 /*Assigning my photo with the right size and circle border.*/
 #my-photo img {
   width: 200px;
-  height:auto;
+  height: auto;
   border-radius: 50%;
 }
 
@@ -135,7 +136,7 @@ header {
 
 #about-bubble img {
   width: 120px;
-  height:auto;
+  height: auto;
 }
 
 #resume-bubble {
@@ -156,7 +157,7 @@ header {
 
 #resume-bubble img {
   width: 120px;
-  height:auto;
+  height: auto;
 }
 
 #works-bubble {
@@ -177,7 +178,7 @@ header {
 
 #works-bubble img {
   width: 190px;
-  height:auto;
+  height: auto;
 }
 
 #contact-bubble {
@@ -198,22 +199,20 @@ header {
 
 #contact-bubble img {
   width: 160px;
-  height:auto;
+  height: auto;
 }
 
 /*Used transition and transform properties to enlarge the link images on hover.*/
 
 #main-nav div a img {
-  transition: transform .2s;
+  transition: transform 0.2s;
 }
 
 #main-nav div a img:hover {
   transform: scale(1.2);
 }
 
-
 /* || ABOUT SECTION */
-
 
 #about {
   width: 100%;
@@ -221,7 +220,6 @@ header {
   margin: 0 auto;
   padding: 60px;
   background-color: var(--peach);
-
 }
 
 #about figure img {
@@ -274,7 +272,7 @@ header {
 }
 
 .work-bubble img:hover {
-  opacity: 1.0;
+  opacity: 1;
   z-index: 5;
 }
 
@@ -285,6 +283,10 @@ header {
   font-size: 1.5em;
   font-weight: bold;
   z-index: 6;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
 }
 
 /*Assigning the bubbles with the right sizes and circle borders, and turning them into box containers to display the link images right in the middle of them.*/
@@ -343,13 +345,12 @@ header {
 /*Used transition and transform properties to enlarge the link names on hover.*/
 
 .work-bubble a {
-  transition: transform .2s;
+  transition: transform 0.2s;
 }
 
 .work-bubble a:hover {
   transform: scale(1.1);
 }
-
 
 /* || CONTACT SECTION */
 
@@ -372,7 +373,7 @@ header {
   width: 40%;
 }
 
- /*Setting the contact list as a flex container to give initial position to the contact bubbles.*/
+/*Setting the contact list as a flex container to give initial position to the contact bubbles.*/
 #contact ul {
   display: flex;
   justify-content: flex-end;
@@ -416,13 +417,12 @@ header {
 /*Used transition and transform properties to enlarge the contact links bubbles on hover.*/
 
 #contact li {
-  transition: transform .2s;
+  transition: transform 0.2s;
 }
 
 #contact li:hover {
   transform: scale(1.2);
 }
-
 
 /* || MEDIA QUERIES */
 
@@ -431,7 +431,7 @@ header {
   #main-nav {
     margin: 0 auto;
   }
-  
+
   /*Increasing the size of the header font.*/
   #main-nav h2 {
     font-size: 1.6em;
@@ -441,7 +441,7 @@ header {
     margin-top: 0%;
     margin-left: 0%;
   }
-  
+
   #my-photo img {
     width: 300px;
   }
@@ -450,124 +450,121 @@ header {
     margin-top: 20%;
     margin-left: 40%;
   }
-  
+
   #resume-bubble {
     width: 200px;
     height: 200px;
     margin-top: -15%;
     margin-left: -20%;
   }
-  
+
   #works-bubble {
     margin-top: 10%;
     margin-left: 0%;
   }
-  
+
   #contact-bubble {
     margin-top: -15%;
     margin-left: -5%;
   }
 
-
   #work {
     margin: 0 auto;
   }
-  
-   /*Increasing the size of the link name font.*/
+
+  /*Increasing the size of the link name font.*/
   .work-bubble a {
     font-size: 2em;
   }
-  
+
   #work1 {
     width: 400px;
     height: 400px;
     margin-top: -10%;
     margin-left: -10%;
   }
-  
+
   #work2 {
     width: 320px;
     height: 320px;
     margin-top: 18%;
     margin-left: -7%;
   }
-  
+
   #work3 {
     width: 300px;
     height: 300px;
     margin-top: -5%;
     margin-left: 25%;
   }
-  
+
   #work4 {
     width: 350px;
     height: 350px;
     margin-top: 0%;
     margin-left: 0%;
   }
-  
+
   #work5 {
     width: 320px;
     height: 320px;
     margin-top: -15%;
     margin-left: -18%;
   }
-  
 }
-
 
 /*Desktop display: Setting the layout for the work grid and contact section and increasing the sizes of their bubbles.*/
 @media screen and (min-width: 1180px) {
   body {
-      grid-template-columns: 1fr 1fr 1fr;
-      grid-template-areas: 
-          "header header nav"
-          "about about nav"
-          "work work work"
-          "contact contact contact";
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas:
+      "header header nav"
+      "about about nav"
+      "work work work"
+      "contact contact contact";
   }
 
   /*Increasing the size of the header font.*/
   .work-bubble a {
     font-size: 3em;
   }
-  
+
   #work1 {
     width: 500px;
     height: 500px;
     margin-top: -10%;
     margin-left: 10%;
   }
-  
+
   #work2 {
     width: 400px;
     height: 400px;
     margin-top: 18%;
     margin-left: -7%;
   }
-  
+
   #work3 {
     width: 375px;
     height: 375px;
     margin-top: -5%;
     margin-left: 45%;
   }
-  
+
   #work4 {
     width: 440px;
     height: 440px;
     margin-top: 0%;
     margin-left: 20%;
   }
-  
+
   #work5 {
     width: 400px;
     height: 400px;
     margin-top: -15%;
     margin-left: -18%;
   }
-  
-   /*Increasing the size of the works link name font.*/
+
+  /*Increasing the size of the works link name font.*/
   .work-bubble a {
     font-size: 3em;
   }
@@ -582,24 +579,22 @@ header {
     width: 150px;
     margin-top: -15%;
   }
-  
+
   #linkedin {
     height: 180px;
     width: 180px;
     margin-bottom: -15%;
   }
-  
+
   #github {
     height: 165px;
     width: 165px;
     margin-left: -5%;
   }
-
 }
-  
+
 /*Large desktop display: Setting the layout for the work grid and contact section and increasing the sizes of their bubbles.*/
 @media screen and (min-width: 1800px) {
-  
   /*Increasing the sise of the header name image to look more balanced with the rest of the page.*/
   #name-bubble {
     width: 360px;
@@ -612,28 +607,28 @@ header {
     margin-top: -10%;
     margin-left: 10%;
   }
-  
+
   #work2 {
     width: 640px;
     height: 640px;
     margin-top: 18%;
     margin-left: -7%;
   }
-  
+
   #work3 {
     width: 600px;
     height: 600px;
     margin-top: -5%;
     margin-left: 45%;
   }
-  
+
   #work4 {
     width: 700px;
     height: 700px;
     margin-top: 0%;
     margin-left: 20%;
   }
-  
+
   #work5 {
     width: 640px;
     height: 640px;
@@ -646,12 +641,12 @@ header {
     width: 70%;
   }
 
-   /*Decreasing the relative size of the contacts section header to look more balanced.*/
+  /*Decreasing the relative size of the contacts section header to look more balanced.*/
   #contact img {
     width: 30%;
   }
 
-   /*Increasing the size of the contacts link name font.*/
+  /*Increasing the size of the contacts link name font.*/
   #contact li {
     font-size: 1.6em;
   }
@@ -661,18 +656,16 @@ header {
     width: 200px;
     margin-top: -15%;
   }
-  
+
   #linkedin {
     height: 240px;
     width: 240px;
     margin-bottom: -15%;
   }
-  
+
   #github {
     height: 220px;
     width: 220px;
     margin-left: -5%;
   }
 }
-
-  
